@@ -1,0 +1,1061 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+h1{
+  font-size: 30px;
+  font-family: "LT Amber";
+  font-weight: bold;
+}
+p{
+  font-size: 25px;
+  font-family: "LT Amber";
+  font-weight: lighter;
+}
+
+/* header section */
+  .header {
+  background-color:#7C7471;;
+  position: fixed;
+  width: 100%;
+  margin-top: 0px;
+  z-index: 8;
+  }
+  .header ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #7C7471;
+  margin-right: 120px;
+  }
+  .header li a {
+  font-size: 25px;
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: black;
+  margin-right: 0px;
+  }
+  .header li a:hover,
+  .header .menu-btn:hover {
+  color: #DFDAD5;
+  }
+  /* menu */
+  .header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .3s ease-out;
+  }
+  /* menu icon */
+  .header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 400px;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+  }
+  .header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: ease-out;
+  transition-duration: 0.1s;
+  width: 18px;
+  }
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+  }
+  .header .menu-icon .navicon:before {
+  top: 5px;
+  }
+  .header .menu-icon .navicon:after {
+  top: -5px;
+  }
+  /* menu button */
+  .header .menu-btn {
+  display: none;
+  }
+  .header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+  margin-top: -10px;
+  }
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+  }
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+  }
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+  }
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+  }
+/* header section end */
+
+/* home section */
+  .main #box{
+  position: relative;
+  background-color: #BAAFAF;
+  height: 400px;
+  width: 100%;
+  z-index: 0;
+  margin-top: 30px;  
+  }
+  h4{
+    font-family: "LT Amber";
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 50px;
+    position: absolute;
+    margin-left: 20px;
+    display: block;
+    z-index: 1;
+  }
+  .front-img img{
+    width: 300px;
+    height: auto;
+    position: relative;
+    display: block;
+    margin-top: -290px;
+    float: right;
+    margin-right: 90px;
+  }
+/* home section end */
+
+
+/*about me section*/
+  .about-me{
+  background-color: #DFDAD5;
+  border-radius: 30px 0px 30px 0px;
+  padding: 20px;
+  display: block;
+  position: absolute;
+  float: right;
+  margin: 20px;
+  }
+  /*lines at logo*/
+  .hr-lines{
+  position: relative;
+  max-width: 500px;
+  margin: 0px auto;
+  text-align: center;
+  z-index: 2;
+  }
+  .hr-lines:before{
+  content:" ";
+  height: 2px;
+  width: 850px;
+  background: rgb(0, 0, 0);
+  display: block;
+  position: absolute;
+  top: 170px;
+  left: -670px;
+  }
+  .hr-lines:after{
+  content:" ";
+  height: 2px;
+  width: 850px;
+  background: rgb(0, 0, 0);
+  display: block;
+  position: absolute;
+  top: 170px;
+  right: 0;
+  left: 300px;
+  }
+  /*logo*/
+  div.logo_div img{
+  width: 150px;
+  height: auto;
+  position: relative;
+  left: -10px;
+  top: 100px;
+  z-index: 2;
+  }
+  .img-me img{
+  margin-left: 20px;
+  margin-top: 145px;
+  width: 92%;
+  height: auto;
+  border-radius: 0px 30px 0px 30px;
+  }
+/* about me section end*/
+
+
+/*portfolio section*/
+  .main-portfolio{
+  height: 30px;
+  width: 30px;
+  }
+  .face-vector img{
+  margin-top: 120px;
+  margin-left: 20px;
+  height: auto;
+  width: 440px;
+  position: relative;
+  z-index: 0;
+  }
+  .portfolio-show {
+  position: relative;
+  max-width: 1400px;
+  margin-top: 230px;
+  margin-left: -10px;
+  margin-right: auto;
+  }
+  .portfolio-show h1{
+  margin-left: 40px;
+  }
+  .container {
+  position: relative;
+  width: 100%;
+  } 
+  .port {
+  display: block;
+  width: 100%;
+  height: auto;  
+  }
+  .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  }
+  .container:hover .overlay {
+  opacity: 1;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .row {
+  margin: 8px -8px;
+  }
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+  padding: 8px;
+  margin-left: 12px;
+  }
+  /* Create four equal columns that floats next to each other */
+  .column {
+  float: left;
+  width: 90%;
+  margin-left: 20px;
+  }
+  /* Clear floats after rows */ 
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+  /* Content */
+  .content {
+  background-color: #DFDAD5;
+  padding: 10px;
+  margin-left: 0px;
+  }
+  .content h3 {
+  font-family: "LT Amber";
+  font-size: 25px;
+  margin: 0px;
+  }
+  .content p {
+  font-family: "LT Amber";
+  font-size: 20px;
+  margin: 0px;
+  }    
+  .button{
+  background-color: #F5993D;
+  padding: 4% 30%;
+  margin-left: 2%;
+  border-radius: 20px 0px ;
+  color: #DFDAD5;
+  font-family: "LT Amber";
+  font-size: 20px;
+  float: left;
+  }
+/* portfolio section end*/
+
+
+/*contact section*/
+  .contact-formular .contact-box {
+  box-sizing: border-box;
+  margin-top: -50px;
+  margin-left: 0px;
+  margin-right: 10px;
+  position: relative;
+  display: flex;
+  }
+  .contact-formular{
+  margin-top: 150px;
+  margin-left: 30px;
+  font-family: "LT Amber";
+  }
+  input[type=text], select, textarea {
+  font-family: "LT Amber";
+  font-size: 15px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  }
+  input[type=submit] {
+  font-family: "LT Amber";
+  font-size: 20px;
+  background-color: #FCC31F;
+  color:  #4D4B48;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0px 20px 0px 20px;
+  cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #4D4B48;
+  color: #BAAFAF;
+  }
+  .contact-box{
+  border-radius: 0px 30px 0px 30px;
+  background-color: #BAAFAF;
+  padding: 20px;
+  max-width: 95%;
+  float: left;
+  margin-top: 120px;
+  margin-left: 0px;
+  }
+  .contact-text h1{
+  line-height: 1.5;
+  margin-top: 150px;
+  margin-left: 30px;
+  float: left;
+  }
+  .contact-text p{
+  line-height: 1.5;
+  float: left;
+  height: 350px;
+  width: 430px;
+  margin-top: 0px;
+  margin-left: 30px;
+  }
+  .linkedin img{
+  width: 100px;
+  height: auto;
+  margin-left: 30px;
+  position: absolute;
+  display: block;
+  margin-top: 420px;
+
+  }
+/* contact section end */
+
+
+/* drawing section*/
+  .drawing{
+  position: relative;
+  display: block;
+  }
+  .drawing h1{
+  font-family: "LT Amber";
+  text-align: center;
+  margin-top: 130px;
+  }
+  .lines{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 100px;
+  position: fixed;
+  }
+  .drawing-container {
+  position: relative;
+  width: 100%;
+  }
+  .drawing-content h3 {
+  font-family: "LT Amber";
+  font-size: 25px;
+  margin: 0px;
+  }
+  .drawing-content p {
+  font-family: "LT Amber";
+  font-size: 20px;
+  margin: 0px;
+  }
+  .drawing-row {
+  margin: 8px -16px;
+  margin-left: 20px;
+  }
+  /* Add padding BETWEEN each column */
+  .drawing-row,
+  .drawing-row > .drawing-column {
+  padding: 8px;
+  }
+  /* Create four equal columns that floats next to each other */
+  .drawing-column {
+  float: left;
+  width: 90%;
+  margin-left: 5px;
+  }
+  /* Clear floats after rows */ 
+  .drawing-row:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+  /* Content */
+  .drawing-content {
+  background-color: #DFDAD5;
+  padding: 10px;
+  }
+/* drawing section end */
+
+
+/*animation section*/
+  .shup{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #DFDAD5;
+  margin-top: 50px;
+  margin-left: 3%;
+  margin-right: 3%;
+  border-radius: 0px 30px 0px 30px;
+  }
+  .shup > div{
+  background-color: #DFDAD5;
+  width: 500px;
+  height: 500px;
+  margin: 3%;
+  margin-top: 6%;
+  text-align: left;
+  }
+  .shup > video{
+  background-color: #DFDAD5;
+  width: 500px;
+  height: 500px;
+  margin: 0%;
+  margin-bottom: 20%;
+  margin-top: -20%;
+  text-align: left;
+  }
+  .shup > div > img{
+    margin-left: 0%;
+    margin-top: 5%;
+    width: 425px;
+    height: auto;
+  }
+
+  .shup2{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #DFDAD5;
+    margin-top: 50px;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 30px 0px 30px 0px;
+  }
+  .shup2 > div{
+    background-color: #DFDAD5;
+    width: 500px;
+    height: 500px;
+    margin: 3%;
+    margin-top: 6%;
+    text-align: left;
+  }
+  .sprite{
+  width: 500px;
+  height: 500px;
+  background: url(../html/img/logo_animation.png) 0 0 no-repeat;
+  animation: play 2.5s steps(20) infinite;
+  }
+  @keyframes play{
+  0%{background-position: 0px;}
+  100%{background-position: -10000px;}
+  }
+  .sprite2{
+    width: 500px;
+    height: 500px;
+    background: url(../html/img/logo_anim.png) 0 0 no-repeat;
+    animation: play 2.5s steps(20) infinite;
+    }
+    @keyframes play{
+    0%{background-position: 0px;}
+    100%{background-position: -10000px;}
+    }
+/*animation section end*/
+
+/* drawing section*/
+.vector{
+  position: relative;
+  display: block;
+  }
+  .vector h1{
+  font-family: "LT Amber";
+  text-align: center;
+  margin-top: 130px;
+  }
+  .lines{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 100px;
+  position: fixed;
+  }
+  .vector-container {
+  position: relative;
+  width: 100%;
+  }
+  .vector-content h3 {
+  font-family: "LT Amber";
+  font-size: 25px;
+  margin: 0px;
+  }
+  .vector-content p {
+  font-family: "LT Amber";
+  font-size: 20px;
+  margin: 0px;
+  }
+  .vector-row {
+  margin: 8px -16px;
+  margin-left: 20px;
+  }
+  /* Add padding BETWEEN each column */
+  .vector-row,
+  .vector-row > .vector-column {
+  padding: 8px;
+  }
+  /* Create four equal columns that floats next to each other */
+  .vector-column {
+  float: left;
+  width: 90%;
+  margin-left: 5px;
+  }
+  /* Clear floats after rows */ 
+  .vector-row:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+  /* Content */
+  .vector-content {
+  background-color: #DFDAD5;
+  padding: 10px;
+  }
+/* drawing section end */
+
+/* prototype section */
+.sprite3{
+  width: 500px;
+  height: 500px;
+  background: url(../html/img/logo_anim.png) 0 0 no-repeat;
+  animation: play 2.5s steps(20) infinite;
+
+  }
+  @keyframes play{
+  0%{background-position: 0px;}
+  100%{background-position: -10000px;}
+  }
+/* prototype section end */    
+
+/* web design section */
+/* 52em ca.= 828px */
+    @media (min-width: 828px) {
+/* header section */
+    .header {
+    background-color:#7C7471;;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    margin-top: 0px;
+    }
+    .header li {
+    float: left;
+    padding-right: 0px;
+    }
+    .header li a {
+    padding: 14px 30px 14px 30px;
+    width: 100%;
+    }
+    .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+    margin-right: 220px;
+    }
+    .header .menu-icon {
+    display: none;
+    }
+/* header section end*/
+
+/* home section */
+.main #box{
+  position: relative;
+  background-color: #BAAFAF;
+  height: 500px;
+  width: 100%;
+  z-index: 0;
+  margin-top: 30px;  
+  }
+  .front-img img{
+    width: 500px;
+    height: auto;
+    position: relative;
+    margin-top: -483px;
+    float: right;
+    margin-right: 250px;
+  }
+h4{
+  font-family: "LT Amber";
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: -70px;
+  position: relative;
+  margin-left: 250px;
+  display: flex;
+}
+/* home section end */
+
+/*about me section*/
+    .about-me{
+    background-color: #DFDAD5;
+    border-radius: 30px 0px 30px 0px;
+    padding: 20px;
+    margin-top: 150px;
+    margin-right: 175px;
+    position: relative;
+    width: 600px;
+    }
+    .about-me h1{
+    font-size: 35px;
+    padding: 10px;
+    margin-top: -10px;
+    }
+    .about-me p{
+    font-size: 25px;
+    padding: 10px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    }
+    /*logo lines*/
+    .hr-lines{
+    position: relative;
+    max-width: 500px;
+    margin: 0px auto;
+    text-align: center;
+    }
+    .hr-lines:before{
+    content:" ";
+    height: 2px;
+    width: 850px;
+    background: rgb(0, 0, 0);
+    display: block;
+    position: absolute;
+    top: 170px;
+    left: -720px;
+    }
+    .hr-lines:after{
+    content:" ";
+    height: 2px;
+    width: 850px;
+    background: rgb(0, 0, 0);
+    display: block;
+    position: absolute;
+    top: 170px;
+    right: 0;
+    left: 360px;
+    }
+    div.logo_div {
+    width: 50px;
+    height: auto;
+    position: relative;
+    left: 180px;
+    top: 0px;
+    z-index: 2;
+    }
+    .img-me img{
+    margin-left: 150px;
+    margin-top: 150px;
+    width: 650px;
+    height: auto;
+    float: left;
+    border-radius: 0px 30px 0px 30px;
+    display: flex;
+    position: relative;
+    }
+/* about me section end */
+
+/*portfolio section*/
+    .main-portfolio{
+    height: 30px;
+    width: 30px;
+    }
+    .face-vector img{
+    margin-top: 130px;
+    margin-left: 640px;
+    float: left;
+    height: auto;
+    width: 600px;
+    position: absolute;
+    z-index: 0;
+    }
+    .work {
+    background: grey;
+    padding: 20px 20px 20px 20px;
+    }
+    .portfolio-show {
+    position: relative;
+    max-width: 1400px;
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .portfolio-show h1{
+    font-family: "LT Amber";
+    margin-left: 10px;
+    margin-bottom: 10px;
+    }
+    .container {
+    position: relative;
+    width: 100%;
+    }
+    .content h3 {
+    font-family: "LT Amber";
+    font-size: 25px;
+    margin: 0px;
+    }
+    .content p {
+    font-family: "LT Amber";
+    font-size: 20px;
+    margin: 0px;
+    }
+    .port {
+    display: block;
+    width: 100%;
+    height: auto;
+    }
+    .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    cursor: pointer;
+    }
+    .container:hover .overlay {
+    opacity: 1;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .row {
+    margin: 8px -16px;
+    }
+    /* Add padding BETWEEN each column */
+    .row,
+    .row > .column {
+    padding: 8px;
+    }
+    /* Create four equal columns that floats next to each other */
+    .column {
+    float: left;
+    width: 23%;
+    margin-left: 0%;
+    }
+    /* Clear floats after rows */ 
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    /* Content */
+    .content {
+    background-color: #DFDAD5;
+    padding: 10px;
+    font-family: "LT Amber";
+    }
+/* portfolio section end */
+
+/*contact section*/
+  .contact-formular .contact-box {
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-right: 150px;
+    position: relative;
+    display: flex;
+    }
+    .contact-formular h3{
+    font-family: "LT Amber";
+    font-size: 30px;
+    }
+    input[type=text], select, textarea {
+    font-family: "LT Amber";
+    font-size: 15px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 2px;
+    resize: vertical;
+    }
+    input[type=submit] {
+    font-family: "LT Amber";
+    font-size: 20px;
+    background-color: #FCC31F;
+    color: #4D4B48;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px 20px 0px 20px;
+    }
+    input[type=submit]:hover {
+    background-color: #4D4B48;
+    color: #BAAFAF;
+    }
+    .contact-box{
+    font-family: "LT Amber";
+    font-size: 20px;
+    border-radius: 0px 30px 0px 30px;
+    background-color: #BAAFAF;
+    color: black;
+    padding: 20px;
+    max-width: 34%;
+    position: relative;
+    display: flex;
+    float: right;
+    margin-right: 150px;
+    }
+    .contact-text{
+    background-color: transparent;
+    position: absolute;
+    display: block;
+    margin-left: 150px;
+    width: 600px;
+    margin-top: 150px;
+    }
+    .contact-text h1{
+    margin-top: 0px;
+    margin-left: 0px;
+    }
+    .contact-text p{
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 600px;
+    }
+    .linkedin img{
+    width: 100px;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 230px;
+    }
+/* contact section end */
+
+/* drawing section*/
+    .drawing h1{
+    font-family: "LT Amber";
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 150px;
+    }
+    .lines{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 200px;
+    }
+    .drawing-container {
+    position: relative;
+    width: 100%;
+    }
+    .drawing-content h3 {
+    font-family: "LT Amber";
+    font-size: 25px;
+    margin: 0px;
+    }
+    .drawing-content p {
+    font-family: "LT Amber";
+    font-size: 20px;
+    margin: 0px;
+    }
+    .drawing-row {
+    margin: 8px -16px;
+    margin-left: 260px;
+    }
+    /* Add padding BETWEEN each column */
+    .drawing-row,
+    .drawing-row > .drawing-column {
+    padding: 8px;
+    }
+    /* Create four equal columns that floats next to each other */
+    .drawing-column {
+    float: left;
+    width: 23%;
+    margin-left: 3%;
+    }
+    /* Clear floats after rows */ 
+    .drawing-row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    /* Content */
+    .drawing-content {
+    background-color: #DFDAD5;
+    padding: 10px;
+    font-family: "LT Amber";
+    }
+/* drawing section end */
+
+/*animation section*/
+    .shup{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #DFDAD5;
+    margin-left: 7%;
+    margin-right: 7%;
+    border-radius: 30px 0px 30px 0px;
+    margin-top: 50px;
+    }
+    .shup > div{
+    background-color: #DFDAD5;
+    width: 500px;
+    height: 500px;
+    margin: 22px;
+    text-align: left;
+    }
+    .shup > video{
+    background-color: #DFDAD5;
+    width: 500px;
+    height: 500px;
+    margin: 22px;
+    text-align: left;
+    }
+    .shup > div > img{
+      margin-left: 25px;
+      margin-top: 25px;
+    }
+    .shup2{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #DFDAD5;
+    margin-left: 7%;
+    margin-right: 7%;
+    border-radius: 30px 0px 30px 0px;
+    }
+    .shup2 > div{
+    background-color: #DFDAD5;
+    width: 500px;
+    height: 500px;
+    text-align: left;
+    font-family: "LT Amber";
+    margin: 22px;
+    }
+    .sprite{
+    width: 500px;
+    height: 500px;
+    background: url(../html/img/logo_animation.png) 0 0 no-repeat;
+    animation: play 2.5s steps(20) infinite;
+    }
+    @keyframes play{
+    0%{background-position: 0px;}
+    100%{background-position: -10000px;}
+    }
+    .sprite2{
+    width: 500px;
+    height: 500px;
+    background: url(../html/img/logo_anim.png) 0 0 no-repeat;
+    animation: play 2.5s steps(20) infinite;
+    }
+    @keyframes play{
+    0%{background-position: 0px;}
+    100%{background-position: -10000px;}
+    }
+/*animation section end*/
+
+/* vector section*/
+    .vector h1{
+    font-family: "LT Amber";
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 150px;
+    }
+    .vector.lines{
+      margin-left: 150px;
+      margin-right: 150px;
+      margin-top: 200px;
+    }
+    .vector-container {
+    position: relative;
+    width: 100%;
+    }
+    .vector-content h3 {
+    font-family: "LT Amber";
+    font-size: 25px;
+    margin: 0px;
+    }
+    .vector-content p {
+    font-family: "LT Amber";
+    font-size: 20px;
+    margin: 0px;
+    }
+    .vector-row {
+    margin: 8px -16px;
+    margin-left: 29%;
+    }
+    /* Add padding BETWEEN each column */
+    .vector-row,
+    .vector-row > .vector-column {
+    padding: 8px;
+    }
+    /* Create four equal columns that floats next to each other */
+    .vector-column {
+    float: left;
+    width: 23%;
+    margin-left: 3%;
+    }
+    /* Clear floats after rows */ 
+    .vector-row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    /* Content */
+    .vector-content {
+    background-color: #DFDAD5;
+    padding: 10px;
+    font-family: "LT Amber";
+    }
+/* vector section end */
+
+/* prototype section */
+.sprite3{
+  width: 500px;
+  height: 500px;
+  background: url(../html/img/logo_anim.png) 0 0 no-repeat;
+  animation: play 2.5s steps(20) infinite;
+  margin-left: 700px;
+  }
+  @keyframes play{
+  0%{background-position: 0px;}
+  100%{background-position: -10000px;}
+  }
+/* prototype section end */    
+}
+

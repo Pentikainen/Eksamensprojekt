@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel= "stylesheet" href="mystyle.css">
+</head>
+
+<body>
+<!-- header section -->
+  <header class="header">
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="../html/index.html">Home</a></li>
+          <li><a href="../html/about_me.html">About me</a></li>
+          <li><a href="../html/portfolio.html">Portfolio</a></li>
+          <li><a href="../html/contact.html">Contact</a></li>
+        </ul>
+  </header>
+<!-- header section end -->
+
+<!-- hr lines section -->
+  <div class="hr-lines">
+    <div class="logo_div">
+      <a href="index.html"><img class="logo_img" src="../html/img/logo_best.png" alt="pentikainens logo"></a>
+    </div>
+  </div>
+<!-- hr lines section end-->
+
+<!-- contact section -->
+  <div class="contact-text">
+  <h1>Tak for besøget</h1>
+  <br>
+  <p>Skulle mit arbejde have vækket din interesse er du mere end velkommen til at stille spørgsmål eller fremsende en forespørgsel via kontaktformularen. 
+    <br><br> Du kan også finde mig via:
+  </p>
+    <div class="linkedin">
+      <a href="https://www.linkedin.com/in/gina-pentikainen/"><img class=linkin src="../html/img/LinkedIn-Logos/LI-Logo.png" alt="linkedin logo"></a>
+    </div>
+  </div>
+  <div class="contact-formular">
+    <div class="contact-box">
+      <form action="/action_page.php">
+      <label for="fname">Fornavn</label>
+      <input type="text" id="fname" name="firstname" placeholder="Dit navn..">
+      <label for="lname">Efternavn</label>
+      <input type="text" id="lname" name="lastname" placeholder="Dit efternavn..">
+      <label for="lname">Telefonnummer </label>
+      <input type="text" id="pnumber" name="phonenumber" placeholder="Dit telefonnummer..">
+      <label for="lname">Mail</label>
+      <input type="text" id="mail" name="mail" placeholder="Din e-mail..">
+      <label for="region">Region</label>
+      <select id="region" name="region">
+        <option value="hs">Hovedstaden</option>
+        <option value="sl">Sjælland</option>
+        <option value="sd">Syddanmark</option>
+        <option value="mj">Midtjylland</option>
+        <option value="nj">Nordjylland</option>
+      </select>
+      <label for="subject">Emne</label>
+      <textarea id="subject" name="subject" placeholder="Hvad kan jeg hjælpe dig med.." style="height:70px"></textarea>
+      <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+<!-- contact section end -->
+
+</body>
+</html>
