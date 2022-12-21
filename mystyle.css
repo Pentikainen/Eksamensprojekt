@@ -51,7 +51,7 @@ p{
   .header .menu-icon {
   cursor: pointer;
   display: inline-block;
-  margin-left: 400px;
+  float: right;
   padding: 28px 20px;
   position: relative;
   user-select: none;
@@ -478,7 +478,7 @@ p{
   .sprite{
   width: 500px;
   height: 500px;
-  background: url(../html/img/logo_animation.png) 0 0 no-repeat;
+  background: url(img/logo_animation.png) 0 0 no-repeat;
   animation: play 2.5s steps(20) infinite;
   }
   @keyframes play{
@@ -488,7 +488,7 @@ p{
   .sprite2{
     width: 500px;
     height: 500px;
-    background: url(../html/img/logo_anim.png) 0 0 no-repeat;
+    background: url(img/logo_anim.png) 0 0 no-repeat;
     animation: play 2.5s steps(20) infinite;
     }
     @keyframes play{
@@ -559,7 +559,7 @@ p{
 .sprite3{
   width: 100%;
   height: auto;
-  background: url(../html/img/logo_anim.png) 0 0 no-repeat;
+  background: url(img/logo_anim.png) 0 0 no-repeat;
   animation: play 2.5s steps(20) infinite;
   margin: 0 auto;
   }
@@ -965,7 +965,7 @@ h4{
     .sprite{
     width: 500px;
     height: 500px;
-    background: url(../html/img/logo_animation.png) 0 0 no-repeat;
+    background: url(img/logo_animation.png) 0 0 no-repeat;
     animation: play 2.5s steps(20) infinite;
     }
     @keyframes play{
@@ -975,7 +975,7 @@ h4{
     .sprite2{
     width: 500px;
     height: 500px;
-    background: url(../html/img/logo_anim.png) 0 0 no-repeat;
+    background: url(img/logo_anim.png) 0 0 no-repeat;
     animation: play 2.5s steps(20) infinite;
     }
     @keyframes play{
@@ -1043,7 +1043,7 @@ h4{
 .sprite3{
   width: 500px;
   height: 500px;
-  background: url(../html/img/logo_anim.png) 0 0 no-repeat;
+  background: url(img/logo_anim.png) 0 0 no-repeat;
   animation: play 2.5s steps(20) infinite;
   margin: 0 auto;
   }
